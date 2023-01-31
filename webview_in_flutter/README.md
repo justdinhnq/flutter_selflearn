@@ -17,3 +17,4 @@ Ref: https://codelabs.developers.google.com/codelabs/flutter-webview#0
 7. handle callbacks from JavaScript with a channel
 8. set, remove, add or show cookies
 9. load, display HTML from assets, files or Strings contain HTMl
+
