@@ -1,16 +1,19 @@
 # webview_in_flutter
 
-A new Flutter project.
+WebView Flutter plugin to add a WebView widget to the Android/iOS app
+- iOS: WebView widget is backed by a WKWebView
+- Android: WebView widget is backed by a WebView
 
-## Getting Started
+Ref: https://codelabs.developers.google.com/codelabs/flutter-webview#0
 
-This project is a starting point for a Flutter application.
+## Contents
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. display web content in a WebView
+2. display Flutter widgets stacked over it
+3. react to page load progress events
+4. control it through a controller
+5. block websites using a delegate
+6. evaluate JavaScript expressions
+7. handle callbacks from JavaScript with a channel
+8. set, remove, add or show cookies
+9. load, display HTML from assets, files or Strings contain HTMl
