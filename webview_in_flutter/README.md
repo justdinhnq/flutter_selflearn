@@ -16,5 +16,20 @@ Ref: https://codelabs.developers.google.com/codelabs/flutter-webview#0
 6. evaluate JavaScript expressions
 7. handle callbacks from JavaScript with a channel
 8. set, remove, add or show cookies
-9. load, display HTML from assets, files or Strings contain HTMl
+9. load, display HTML from assets, files or String contain HTMl
 
+## Getting started
+
+1. create a Flutter project
+```
+$ cd webview_in_flutter
+$ flutter run
+```
+
+2. add WebView Flutter plugin as a dependency (pubspec.yaml)
+```
+$ cd webview_in_flutter
+$ flutter pub add webview_flutter
+```
+
+3. configure Android minSDK (android/app/build.gradle)
