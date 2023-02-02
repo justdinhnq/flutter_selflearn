@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:webview_in_flutter/src/web_view_stack.dart';
+import 'package:webview_flutter/webview_flutter.dart';
+
+import 'src/navigation_controls.dart';
+import 'src/web_view_stack.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,6 +52,16 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  late final WebViewController controller;
+
+  @override
+  void initState() {
+    super.initState();
+
+    controller = WebViewController()
+      ..loadRequest(Uri.parse('https://plotly.com/~lamquangthinh.lqt/9/'));
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -62,8 +75,15 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
+        actions: [
+          NavigationControls(
+            controller: controller,
+          )
+        ],
       ),
-      body: const WebViewStack(),
+      body: WebViewStack(
+        controller: controller,
+      ),
     );
   }
 }
