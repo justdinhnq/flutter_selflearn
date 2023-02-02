@@ -33,7 +33,8 @@ class _WebViewStackState extends State<WebViewStack> {
           });
         },
       ))
-      ..loadRequest(Uri.parse('https://datawrapper.dwcdn.net/ip1pl/1/'));
+      ..loadRequest(Uri.parse(
+          'https://chart-studio.plotly.com/~lamquangthinh.lqt/9.embed'));
   }
 
   @override
